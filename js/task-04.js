@@ -8,9 +8,9 @@ const removeListenerBtn = document.querySelector('[data-action="decrement"]');
 
 addListenerBtn.addEventListener('click', () => {
   valueListener.textContent = counterValue += 1
-  
 });
 
 removeListenerBtn.addEventListener('click', () => {
   valueListener.textContent = counterValue -= 1
 });
+
