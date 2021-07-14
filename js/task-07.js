@@ -1,9 +1,8 @@
 const inputRangeEl = document.querySelector('#font-size-control')
 const inputTextEl = document.querySelector('#text')
 
-const synchronicityInput = () => {
-    inputTextEl.style.fontSize = `${inputRangeEl.value}px`
-    console.log(synchronicityInput);
+const fontSizeControl = (event) => {
+    inputTextEl.style.fontSize = event.target.value + "px";
 };
 
-inputRangeEl.addEventListener('input', synchronicityInput)
+inputRangeEl.addEventListener('input', fontSizeControl)

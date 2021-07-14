@@ -12,7 +12,7 @@ const ingredientsEl = document.querySelector('#ingredients');
 
 const getIngredients = ingredients.forEach((element) => {
     const getElement = document.createElement('li');
-    getElement.append(element)  
+    getElement.textContent = element
     ingredientsEl.append(getElement)    
 });
 

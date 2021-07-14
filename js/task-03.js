@@ -15,9 +15,9 @@ const images = [
 
 
 const imagesEl = document.querySelector('#gallery');
-imagesEl.classList.add('card-image');
-for (let element of images) {
-    imagesEl.insertAdjacentHTML('beforeEnd', `<li class="list"><img src="${element.url}" alt="${element.alt}" width=300></li>`);
+imagesEl.classList.add('card_image');
+for (let image of images) {
+    imagesEl.insertAdjacentHTML('beforeEnd', `<li class="list"><img src="${image.url}" alt="${image.alt}" width=300></li>`);
 
 }
 console.log(imagesEl);
