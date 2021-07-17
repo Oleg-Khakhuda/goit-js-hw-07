@@ -19,7 +19,7 @@ const imagesEl = document.querySelector('#gallery');
 imagesEl.classList.add('card_image');
 
 const getImages = images.reduce((string, item) => string +
-    `<li class="list"><img src = ${item.url} alt = '${item.alt}'></li>`, '',
+    `<li class="list"><img src = ${item.url} alt = '${item.alt}' width = 300></li>`, '',
 );
 
 imagesEl.insertAdjacentHTML('afterbegin', getImages);
